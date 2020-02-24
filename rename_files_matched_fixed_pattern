@@ -1,0 +1,6 @@
+#!/bin/bash
+
+for file in $(find . -name '*cmake')
+do
+  mv $file $(echo "$file" | sed -r 's|cmake|.cmake|g')
+done
