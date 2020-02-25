@@ -1,0 +1,1 @@
+find . -type f -name 'xa*' | xargs sed -i 's/asd/dsg/g'
